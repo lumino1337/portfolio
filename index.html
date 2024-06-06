@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rubin || Lumino - Portfolio </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Rubin Sharma - Self-taught full-stack developer from Nepal. Over 5 years of experience in web development.">
+    <meta name="keywords" content="Rubin Sharma, Lumino, Full Stack Developer, Web Development, Nepal, Git, GitHub, Cybersecurity">
+    <meta name="author" content="Rubin Sharma">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">  
+    
+    <meta property="og:title" content="Rubin Sharma - Full Stack Developer">
+    <meta property="og:description" content="Self-taught full-stack developer from Nepal. Over 5 years of experience in web development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lumino.teamhackz.org">
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/1383494314487992329/cMFfONbx_400x400.jpg">
+    <meta property="og:image:alt" content="Rubin Sharma">
+    <meta property="og:site_name" content="Rubin Sharma">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rubin Sharma - Full Stack Developer">
+    <meta name="twitter:description" content="Self-taught full-stack developer from Nepal. Over 5 years of experience in web development.">
+    <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/1383494314487992329/cMFfONbx_400x400.jpg">
+    <meta name="twitter:image:alt" content="Rubin Sharma">
+    
+    <link rel="canonical" href="https://lumino.teamhackz.org">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+  
+  </head>
+  
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <body>
+    <div id="particle-container">
+      <div id="particle"></div>
+  </div>
+  
+
+    
+
+
+    <div id="preloader">
+      <div id="status">&nbsp; Loading...!! </div> 
+    </div>
+   
+    <script>
+      var config = {
+  particles: {
+    number: {
+      value: 150,
+      density: {
+        enable: true,
+        value_area: 786
+      }
+    },
+    color: {
+      value: ["#ffffff", "#FF6F91", "#F9F871", "#D65DB1"]
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000000"
+      },
+      polygon: {
+        nb_sides: 12
+      },
+      image: {
+        src: "",
+        width: 100,
+        height: 100
+      }
+    },
+    opacity: {
+      value: 1,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 1,
+        opacity_min: 0,
+        sync: false
+      }
+    },
+    size: {
+      value: 2.5,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 3,
+        size_min: 0.3,
+        sync: false
+      }
+    },
+    line_linked: {
+      enable: false,
+      distance: 100,
+      color: "#fff",
+      opacity: 0.023674428,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 1.3,
+      direction: "bottom",
+      random: true,
+      straight: true,
+      out_mode: "out",
+      bounce: false,
+      attract: {
+        enable: true,
+        rotateX: 2082.2488,
+        rotateY: 3363.6328
+      }
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: {
+        enable: false,
+        mode: "grab"
+      },
+      onclick: {
+        enable: true,
+        mode: "repulse"
+      },
+      resize: true
+    },
+    modes: {
+      grab: {
+        distance: 70,
+        line_linked: {
+          opacity: 0.25
+        }
+      },
+      bubble: {
+        distance: 100,
+        size: 5,
+        duration: 8.598243,
+        opacity: 0,
+        speed: 3
+      },
+      repulse: {  
+        distance: 150,
+        duration: 0.8
+      },
+      push: {
+        particles_nb: 4
+      },
+      remove: {
+        particles_nb: 2
+      }
+    }
+  },
+  retina_detect: true
+}
+
+window.onload = function() {
+  let clause = window.innerWidth < 768;
+  config.particles.number.value = clause ? 80 : 150;
+  particlesJS('particle', config);
+}
+    </script>
+
+    
+   
+    <script>
+      $(window).on('load', function() {
+        $('#status').fadeOut();
+        $('#preloader').delay(350).fadeOut('slow');
+        $('body').delay(550).css({'overflow':'visible'});
+      })
+    </script>
+    <div id="alert" class="alert hidden">
+      <i class="fas fa-info-circle"></i>
+      <p>Click anywhere on the screen for a better experience</p>
+    </div>
+    <div class="hero-section">
+      <div class="profile-section">
+        <div class="profile-image">
+          <img src="https://pbs.twimg.com/profile_images/1383494314487992329/cMFfONbx_400x400.jpg" alt="Profile-Picture">
+        </div>
+        <div class="name-bio-section">
+          <h3>Rubin Sharma</h3>
+          <div class="bio">
+            <br>
+            <br>
+            <p>Hey, I'm Rubin, aka Lumino. Self-taught full-stack developer from Nepal. Got ideas or want to collaborate? Hit me up on Instagram! 🌟</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="zero-section">
+      <div class="social-container">
+        <p>These are my social media profiles</p>
+        <br>
+        <br>
+        <br>
+      </div>
+      <div class="social-icons">
+        <a href="https://instagram.com/_rubin.1337"><i class="fab fa-instagram"></i></a>
+        <a href="https://discord.com/servers/team-hackz-302652137790242816"><i class="fab fa-discord"></i></a>
+        <a href="https://github.com/lumino1337"><i class="fab fa-github"></i></a>
+        <a href="https://youtube.com/@lumino1337"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/rubin-sharma-78640a312/"><i class="fab fa-linkedin"></i></a>
+        <br>
+        <br>
+      </div>  
+      <div class="skills-section">
+        <h3>Skills & Qualifications</h3>
+        <ul>
+          <li>✔️ Over 5 years of experience in web development.</li>
+          <li>✔️ Proficient in using Git & GitHub for version control.</li>
+          <li>✔️ Good understanding of cybersecurity principles.</li>
+        </ul>
+      </div>
+      <div class="learned-skills">
+        <h3>Programming Skills :</h3>
+      </div>
+      <div class="knowledge-container">
+        <div class="knowledge-container">
+          <span class="knowledge-item">HTML, CSS, JavaScript</span>
+          <span class="knowledge-item">Python, Flask, Bootstrap</span>
+          <span class="knowledge-item">C, Qbasic</span>
+          <span class="knowledge-item">Linux</span>
+          <span class="knowledge-item">Git & Github</span>
+        </div>
+      </div>
+      <div class="extra-info">
+        <h3> Additional Info :) </h3>
+        <p>I'm a 17-year-old Computer Science student & I'm Single. I enjoy coding, cybersecurity, staying fit, and watching anime. I'm fluent in Englsih, Hindi & Nepali Language. Let's connect and chat about our interests! ⌛</p>
+      </div>
+      <br><br>
+      <div class="quote"> "In a world of whispers, I roar with silent strength" 🦁</div>
+      <footer> Coded with 💝 by Rubin.</footer>
+    </div>
+  </body>
+</html>
